@@ -39,6 +39,14 @@ const server = http.createServer((req, res) => {
 
   fs.stat(safePath, (err, stats) => {
     if (err) {
+      // Don't fallback images/assets to index.html
+      const ext = path.extname(reqPath).toLowerCase();
+      if (ext && ext !== '.html') {
+        res.statusCode = 404;
+        res.end('File Not Found');
+        return;
+      }
+
       const fallbackPath = path.join(PUBLIC_DIR, 'index.html');
       fs.readFile(fallbackPath, (err2, content) => {
         if (err2) {
