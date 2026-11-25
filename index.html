@@ -1,0 +1,809 @@
+<!DOCTYPE html><html lang="en" class="scroll-smooth"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home — Mehro nisa Malik, Clinical Dietician</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">/** @type {import('tailwindcss').Config} */
+globalThis.tailwind = globalThis.tailwind || {};
+globalThis.tailwind.config = {
+  darkMode: 'class',
+  theme: {
+    extend: {
+      colors: {
+        'sage-green': '#7FA68A',
+        'deep-forest-green': '#2F4F3E',
+        'warm-off-white': '#FAF8F4',
+        'soft-coral': '#E07A5F',
+        'primary': '#2F4F3E',
+        'on-primary': '#FFFFFF',
+        'primary-container': '#C3ECCD',
+        'on-primary-container': '#123722',
+        'secondary': '#42664E',
+        'on-secondary': '#FFFFFF',
+        'secondary-container': '#D1FBDB',
+        'on-secondary-container': '#123722',
+        'accent': '#B95C43',
+        'on-accent': '#060606',
+        'accent-container': '#FFDBD2',
+        'on-accent-container': '#3C0800',
+        'surface': '#FAF8F4',
+        'on-surface': '#1B1C1A',
+        'surface-container-lowest': '#FFFFFF',
+        'surface-container-low': '#F2F0ED',
+        'surface-container': '#ECF3EA',
+        'surface-container-high': '#DDE4DC',
+        'on-surface-variant': '#424842',
+        'outline': '#727972',
+        'outline-variant': '#C1C8C0',
+        'error': '#BA1A1A',
+        'on-error': '#FFFFFF',
+      },
+      borderRadius: {
+        'sm': '6px',
+        'DEFAULT': '12px',
+        'md': '12px',
+        'lg': '16px',
+        'xl': '24px',
+        'full': '9999px',
+      },
+      spacing: {
+        'gutter-xs': '4px',
+        'gutter-sm': '8px',
+        'gutter-md': '16px',
+        'gutter-lg': '24px',
+        'gutter-xl': '32px',
+        'section': '64px',
+        'page-margin': '24px',
+      },
+      fontFamily: {
+        'display': ['"Playfair"', 'sans-serif'],
+        'headline': ['"Playfair"', 'sans-serif'],
+        'title': ['"Poppins"', 'sans-serif'],
+        'body': ['"Poppins"', 'sans-serif'],
+        'label': ['"Poppins"', 'sans-serif'],
+        'mono': ['"Spline Sans Mono"', 'monospace'],
+      },
+      fontSize: {
+        'display-lg': ['48px', { lineHeight: '56px', letterSpacing: '-0.5px', fontWeight: '700' }],
+        'display-lg-mobile': ['32px', { lineHeight: '38px', letterSpacing: '-0.25px', fontWeight: '700' }],
+        'headline-lg': ['36px', { lineHeight: '44px', letterSpacing: '-0.25px', fontWeight: '600' }],
+        'headline-lg-mobile': ['28px', { lineHeight: '34px', letterSpacing: '-0.15px', fontWeight: '600' }],
+        'headline-md': ['26px', { lineHeight: '34px', letterSpacing: '0px', fontWeight: '600' }],
+        'title-lg': ['20px', { lineHeight: '28px', letterSpacing: '0px', fontWeight: '600' }],
+        'title-md': ['16px', { lineHeight: '24px', letterSpacing: '0.1px', fontWeight: '600' }],
+        'body-lg': ['18px', { lineHeight: '28px', letterSpacing: '0px', fontWeight: '400' }],
+        'body-md': ['15px', { lineHeight: '24px', letterSpacing: '0.1px', fontWeight: '400' }],
+        'body-sm': ['13px', { lineHeight: '20px', letterSpacing: '0.15px', fontWeight: '400' }],
+        'label-lg': ['14px', { lineHeight: '20px', letterSpacing: '0.25px', fontWeight: '600' }],
+        'label-sm': ['12px', { lineHeight: '16px', letterSpacing: '0.3px', fontWeight: '500' }],
+        'mono-md': ['14px', { lineHeight: '20px', letterSpacing: '0px', fontWeight: '500' }],
+      },
+      transitionDuration: {
+        'state-change': '180ms',
+        'surface-enter': '320ms',
+        'surface-exit': '200ms',
+      },
+      transitionDelay: {
+        'state-change': '0ms',
+        'surface-enter': '0ms',
+        'surface-exit': '0ms',
+      },
+      transitionTimingFunction: {
+        'state-change': 'ease-out',
+        'surface-enter': 'cubic-bezier(0.2, 0, 0, 1)',
+        'surface-exit': 'cubic-bezier(0.3, 0, 1, 1)',
+      },
+    },
+  },
+};
+if (typeof module !== 'undefined') module.exports = globalThis.tailwind.config;
+</script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair:wght@600;700&amp;family=Poppins:wght@400;500;600&amp;family=Spline+Sans+Mono:wght@500&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet">
+  <style>
+    .material-symbols-outlined, .material-symbols-rounded, .material-symbols-sharp, .material-icons {
+      display: inline-block;
+      width: 1em;
+      height: 1em;
+      line-height: 1 !important;
+      box-sizing: content-box;
+      overflow: hidden;
+      white-space: nowrap;
+      direction: ltr;
+      vertical-align: middle;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .reveal-on-scroll {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+      }
+    }
+  </style>
+</head>
+<body class="bg-surface text-on-surface font-body antialiased selection:bg-primary-container selection:text-on-primary-container">
+  <div class="min-h-[1024px] flex flex-col" data-stitch-vh="min-h-[1024px]===min-h-screen">
+
+    <!-- Sticky Navigation Bar -->
+    <header class="sticky top-0 z-40 bg-surface border-b border-outline-variant/50">
+      <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between gap-6">
+        <a href="#home" class="flex items-center gap-3 shrink-0 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary rounded-lg">
+          <span class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary">
+            <span class="material-symbols-outlined text-title-lg" aria-hidden="true">eco</span>
+          </span>
+          <span class="flex flex-col">
+            <span data-design-text-token="title-lg" class="font-headline text-title-lg text-primary leading-none">Mehro nisa Malik</span>
+            <span data-design-text-token="label-sm" class="font-body text-label-sm text-on-surface-variant">Clinical Dietician</span>
+          </span>
+        </a>
+
+        <nav aria-label="Primary navigation" class="hidden lg:flex items-center gap-6">
+          <a href="#home" data-design-text-token="label-lg" class="font-body text-label-lg text-primary border-b-2 border-sage-green pb-0.5">Home</a>
+          <a href="#about" data-design-text-token="body-sm" class="font-body text-body-sm text-on-surface-variant hover:text-primary transition-colors duration-state-change ease-state-change">About</a>
+          <a href="#services" data-design-text-token="body-sm" class="font-body text-body-sm text-on-surface-variant hover:text-primary transition-colors duration-state-change ease-state-change">Services</a>
+          <a href="#conditions" data-design-text-token="body-sm" class="font-body text-body-sm text-on-surface-variant hover:text-primary transition-colors duration-state-change ease-state-change">Conditions I Treat</a>
+          <a href="#blog" data-design-text-token="body-sm" class="font-body text-body-sm text-on-surface-variant hover:text-primary transition-colors duration-state-change ease-state-change">Blog</a>
+          <a href="#testimonials" data-design-text-token="body-sm" class="font-body text-body-sm text-on-surface-variant hover:text-primary transition-colors duration-state-change ease-state-change">Testimonials</a>
+          <a href="#contact" data-design-text-token="body-sm" class="font-body text-body-sm text-on-surface-variant hover:text-primary transition-colors duration-state-change ease-state-change">Contact</a>
+        </nav>
+
+        <div class="flex items-center gap-3 shrink-0">
+          <!-- COMPONENT: button-primary -->
+          <a href="#contact" data-component-id="button-primary" data-component-type="button" data-component-variant="primary" class="hidden sm:inline-flex items-center justify-center gap-2 rounded-full bg-soft-coral hover:bg-accent text-on-accent px-5 py-2.5 shadow-sm transition-colors duration-state-change ease-state-change focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">
+            <span data-design-text-token="label-lg" class="font-body text-label-lg">Book Appointment</span>
+          </a>
+
+          <button id="mobile-menu-btn" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu" class="lg:hidden inline-flex items-center justify-center w-11 h-11 rounded-full border border-outline-variant bg-surface-container-lowest text-primary hover:bg-surface-container transition-colors duration-state-change ease-state-change">
+            <span class="material-symbols-outlined text-title-lg" aria-hidden="true">menu</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Drawer Menu -->
+      <div id="mobile-menu" class="hidden lg:hidden border-t border-outline-variant/50 bg-surface-container-lowest px-6 py-4">
+        <nav aria-label="Mobile navigation" class="flex flex-col gap-3">
+          <a href="#home" class="font-body text-label-lg text-primary py-1">Home</a>
+          <a href="#about" class="font-body text-body-md text-on-surface-variant py-1">About</a>
+          <a href="#services" class="font-body text-body-md text-on-surface-variant py-1">Services</a>
+          <a href="#conditions" class="font-body text-body-md text-on-surface-variant py-1">Conditions I Treat</a>
+          <a href="#blog" class="font-body text-body-md text-on-surface-variant py-1">Blog</a>
+          <a href="#testimonials" class="font-body text-body-md text-on-surface-variant py-1">Testimonials</a>
+          <a href="#contact" class="font-body text-body-md text-on-surface-variant py-1">Contact</a>
+          <a href="#contact" class="mt-2 inline-flex items-center justify-center rounded-full bg-soft-coral hover:bg-accent text-on-accent px-5 py-3 font-body text-label-lg">Book Appointment</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="flex-1">
+
+      <!-- Hero Section -->
+      <section id="home" class="py-12 lg:py-20">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+          <div class="lg:col-span-7 flex flex-col gap-6">
+            <div>
+              <!-- COMPONENT: badge-status -->
+              <span data-component-id="badge-status" data-component-type="badge" data-component-variant="status" role="status" class="inline-flex items-center gap-2 rounded-full bg-surface-container text-primary px-4 py-1.5">
+                <span class="w-2 h-2 rounded-full bg-sage-green" aria-hidden="true"></span>
+                <span data-design-text-token="label-sm" class="font-body text-label-sm">Accepting Online &amp; In-Clinic Patients</span>
+              </span>
+            </div>
+
+            <!-- COMPONENT: typography-display -->
+            <h1 data-component-id="typography-display" data-component-type="typography" data-component-variant="display" data-design-text-token="display-lg" class="font-headline text-display-lg-mobile md:text-display-lg text-primary text-balance">
+              Evidence-Based Nutrition for Better Health.
+            </h1>
+
+            <!-- COMPONENT: typography-body -->
+            <p data-component-id="typography-body" data-component-type="typography" data-component-variant="body" data-design-text-token="body-lg" class="font-body text-body-lg text-on-surface-variant max-w-prose text-pretty">
+              Personalised clinical diet plans for diabetes, weight management, PCOS, kidney disease, and more—grounded in medical science and built around real, everyday meals.
+            </p>
+
+            <div class="flex flex-wrap items-center gap-4 pt-2">
+              <!-- COMPONENT: button-cta -->
+              <a href="#contact" data-component-id="button-cta" data-component-type="button" data-component-variant="primary" class="inline-flex items-center justify-center gap-2 rounded-full bg-soft-coral hover:bg-accent text-on-accent px-7 py-3.5 shadow-sm transition-colors duration-state-change ease-state-change focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">
+                <span class="material-symbols-outlined text-title-lg" aria-hidden="true">calendar_month</span>
+                <span data-design-text-token="label-lg" class="font-body text-label-lg">Book a Consultation</span>
+              </a>
+
+              <!-- COMPONENT: button-secondary -->
+              <a href="#services" data-component-id="button-secondary" data-component-type="button" data-component-variant="secondary" class="inline-flex items-center justify-center gap-2 rounded-full border border-primary bg-surface-container-lowest hover:bg-surface-container text-primary px-7 py-3.5 transition-colors duration-state-change ease-state-change focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">
+                <span data-design-text-token="label-lg" class="font-body text-label-lg">Learn More</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="lg:col-span-5">
+            <div class="relative rounded-xl bg-surface-container p-4 sm:p-5 shadow-sm border border-outline-variant/40">
+              <img src="images/dietician.jpg" alt="Mehro nisa Malik, Clinical Dietician smiling warmly in her clinic" class="w-full aspect-[3/4] object-cover rounded-lg">
+              <div class="mt-4 flex items-center justify-between gap-4 px-2">
+                <div>
+                  <p data-design-text-token="title-md" class="font-body text-title-md text-primary">Mehro nisa Malik, RD</p>
+                  <p data-design-text-token="body-sm" class="font-body text-body-sm text-on-surface-variant">MSc Clinical Nutrition &amp; Dietetics</p>
+                </div>
+                <span class="inline-flex items-center gap-1 rounded-full bg-surface-container-lowest px-3 py-1.5 border border-outline-variant/40">
+                  <span class="material-symbols-outlined text-title-md text-sage-green" style="font-variation-settings: &#39;FILL&#39; 1;" aria-hidden="true">verified</span>
+                  <span data-design-text-token="label-sm" class="font-body text-label-sm text-primary">Verified</span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Trust Strip -->
+      <section aria-label="Clinical credentials" class="bg-surface-container border-y border-outline-variant/40 py-8">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 rounded-lg bg-surface-container-lowest flex items-center justify-center text-primary shrink-0 shadow-sm">
+              <span class="material-symbols-outlined text-headline-md" aria-hidden="true">workspace_premium</span>
+            </div>
+            <div>
+              <p data-design-text-token="title-md" class="font-body text-title-md text-primary tabular-nums">8+ Years Experience</p>
+              <p data-design-text-token="body-sm" class="font-body text-body-sm text-on-surface-variant">Hospital &amp; private practice</p>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 rounded-lg bg-surface-container-lowest flex items-center justify-center text-primary shrink-0 shadow-sm">
+              <span class="material-symbols-outlined text-headline-md" aria-hidden="true">groups</span>
+            </div>
+            <div>
+              <p data-design-text-token="title-md" class="font-body text-title-md text-primary tabular-nums">1,500+ Patients Helped</p>
+              <p data-design-text-token="body-sm" class="font-body text-body-sm text-on-surface-variant">Sustainable health outcomes</p>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 rounded-lg bg-surface-container-lowest flex items-center justify-center text-primary shrink-0 shadow-sm">
+              <span class="material-symbols-outlined text-headline-md" aria-hidden="true">verified_user</span>
+            </div>
+            <div>
+              <p data-design-text-token="title-md" class="font-body text-title-md text-primary">Registered Dietician</p>
+              <p data-design-text-token="body-sm" class="font-body text-body-sm text-on-surface-variant">Clinical nutrition therapy</p>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 rounded-lg bg-surface-container-lowest flex items-center justify-center text-primary shrink-0 shadow-sm">
+              <span class="material-symbols-outlined text-headline-md" aria-hidden="true">videocam</span>
+            </div>
+            <div>
+              <p data-design-text-token="title-md" class="font-body text-title-md text-primary">Online &amp; In-Clinic</p>
+              <p data-design-text-token="body-sm" class="font-body text-body-sm text-on-surface-variant">Flexible 1-on-1 consultations</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Overview -->
+      <section id="services" class="py-16 lg:py-24 reveal-on-scroll">
+        <div class="max-w-7xl mx-auto px-6">
+          <div class="max-w-2xl mb-12 flex flex-col gap-3">
+            <h2 data-design-text-token="headline-lg" class="font-headline text-headline-lg-mobile md:text-headline-lg text-primary text-balance">
+              Clinical Nutrition Services
+            </h2>
+            <p data-design-text-token="body-md" class="font-body text-body-md text-on-surface-variant text-pretty">
+              Every plan is tailored to your lab reports, medical history, and cultural kitchen—never a one-size-fits-all template.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
+            <!-- Service 1 -->
+            <!-- COMPONENT: card-action -->
+            <article data-component-id="card-action" data-component-type="card" data-component-variant="action" class="h-full rounded-xl bg-surface-container-lowest border border-outline-variant/40 shadow-sm p-6 flex flex-col justify-between gap-5 hover:shadow-md hover:border-sage-green transition-colors duration-state-change ease-state-change">
+              <div class="flex flex-col gap-3">
+                <div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+                  <span class="material-symbols-outlined text-headline-md" aria-hidden="true">scale</span>
+                </div>
+                <h3 data-design-text-token="title-lg" class="font-body text-title-lg text-primary">Weight Management</h3>
+                <p data-design-text-token="body-md" class="font-body text-body-md text-on-surface-variant text-pretty">
+                  Steady, metabolism-friendly fat loss or healthy weight gain built on nourishing home meals without crash dieting.
+                </p>
+              </div>
+              <footer>
+                <a href="#contact" class="inline-flex items-center gap-1.5 font-body text-label-lg text-primary hover:text-secondary">
+                  <span data-design-text-token="label-lg">Book consultation</span>
+                  <span class="material-symbols-outlined text-title-md" aria-hidden="true">arrow_forward</span>
+                </a>
+              </footer>
+            </article>
+
+            <!-- Service 2 -->
+            <article data-component-id="card-action" data-component-type="card" data-component-variant="action" class="h-full rounded-xl bg-surface-container-lowest border border-outline-variant/40 shadow-sm p-6 flex flex-col justify-between gap-5 hover:shadow-md hover:border-sage-green transition-colors duration-state-change ease-state-change">
+              <div class="flex flex-col gap-3">
+                <div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+                  <span class="material-symbols-outlined text-headline-md" aria-hidden="true">monitoring</span>
+                </div>
+                <h3 data-design-text-token="title-lg" class="font-body text-title-lg text-primary">Diabetes Nutrition</h3>
+                <p data-design-text-token="body-md" class="font-body text-body-md text-on-surface-variant text-pretty">
+                  Structured carbohydrate pairing and glycemic guidance for Type 1, Type 2, prediabetes, and gestational diabetes.
+                </p>
+              </div>
+              <footer>
+                <a href="#contact" class="inline-flex items-center gap-1.5 font-body text-label-lg text-primary hover:text-secondary">
+                  <span data-design-text-token="label-lg">Book consultation</span>
+                  <span class="material-symbols-outlined text-title-md" aria-hidden="true">arrow_forward</span>
+                </a>
+              </footer>
+            </article>
+
+            <!-- Service 3 -->
+            <article data-component-id="card-action" data-component-type="card" data-component-variant="action" class="h-full rounded-xl bg-surface-container-lowest border border-outline-variant/40 shadow-sm p-6 flex flex-col justify-between gap-5 hover:shadow-md hover:border-sage-green transition-colors duration-state-change ease-state-change">
+              <div class="flex flex-col gap-3">
+                <div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+                  <span class="material-symbols-outlined text-headline-md" aria-hidden="true">spa</span>
+                </div>
+                <h3 data-design-text-token="title-lg" class="font-body text-title-lg text-primary">PCOS &amp; Hormonal Health</h3>
+                <p data-design-text-token="body-md" class="font-body text-body-md text-on-surface-variant text-pretty">
+                  Anti-inflammatory, insulin-sensitising nutrition strategies to support cycle regularity, energy, and thyroid balance.
+                </p>
+              </div>
+              <footer>
+                <a href="#contact" class="inline-flex items-center gap-1.5 font-body text-label-lg text-primary hover:text-secondary">
+                  <span data-design-text-token="label-lg">Book consultation</span>
+                  <span class="material-symbols-outlined text-title-md" aria-hidden="true">arrow_forward</span>
+                </a>
+              </footer>
+            </article>
+
+            <!-- Service 4 -->
+            <article data-component-id="card-action" data-component-type="card" data-component-variant="action" class="h-full rounded-xl bg-surface-container-lowest border border-outline-variant/40 shadow-sm p-6 flex flex-col justify-between gap-5 hover:shadow-md hover:border-sage-green transition-colors duration-state-change ease-state-change">
+              <div class="flex flex-col gap-3">
+                <div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+                  <span class="material-symbols-outlined text-headline-md" aria-hidden="true">cardiology</span>
+                </div>
+                <h3 data-design-text-token="title-lg" class="font-body text-title-lg text-primary">Renal &amp; Cardiac Diet</h3>
+                <p data-design-text-token="body-md" class="font-body text-body-md text-on-surface-variant text-pretty">
+                  Carefully balanced sodium, potassium, phosphorus, and lipid-lowering meal plans aligned with your specialist&#39;s care.
+                </p>
+              </div>
+              <footer>
+                <a href="#contact" class="inline-flex items-center gap-1.5 font-body text-label-lg text-primary hover:text-secondary">
+                  <span data-design-text-token="label-lg">Book consultation</span>
+                  <span class="material-symbols-outlined text-title-md" aria-hidden="true">arrow_forward</span>
+                </a>
+              </footer>
+            </article>
+
+            <!-- Service 5 -->
+            <article data-component-id="card-action" data-component-type="card" data-component-variant="action" class="h-full rounded-xl bg-surface-container-lowest border border-outline-variant/40 shadow-sm p-6 flex flex-col justify-between gap-5 hover:shadow-md hover:border-sage-green transition-colors duration-state-change ease-state-change">
+              <div class="flex flex-col gap-3">
+                <div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+                  <span class="material-symbols-outlined text-headline-md" aria-hidden="true">pregnant_woman</span>
+                </div>
+                <h3 data-design-text-token="title-lg" class="font-body text-title-lg text-primary">Pregnancy &amp; Lactation</h3>
+                <p data-design-text-token="body-md" class="font-body text-body-md text-on-surface-variant text-pretty">
+                  Trimester-by-trimester nourishment for maternal energy, healthy fetal growth, and gentle postpartum recovery.
+                </p>
+              </div>
+              <footer>
+                <a href="#contact" class="inline-flex items-center gap-1.5 font-body text-label-lg text-primary hover:text-secondary">
+                  <span data-design-text-token="label-lg">Book consultation</span>
+                  <span class="material-symbols-outlined text-title-md" aria-hidden="true">arrow_forward</span>
+                </a>
+              </footer>
+            </article>
+
+            <!-- Service 6 -->
+            <article data-component-id="card-action" data-component-type="card" data-component-variant="action" class="h-full rounded-xl bg-surface-container-lowest border border-outline-variant/40 shadow-sm p-6 flex flex-col justify-between gap-5 hover:shadow-md hover:border-sage-green transition-colors duration-state-change ease-state-change">
+              <div class="flex flex-col gap-3">
+                <div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+                  <span class="material-symbols-outlined text-headline-md" aria-hidden="true">family_restroom</span>
+                </div>
+                <h3 data-design-text-token="title-lg" class="font-body text-title-lg text-primary">Child &amp; Family Nutrition</h3>
+                <p data-design-text-token="body-md" class="font-body text-body-md text-on-surface-variant text-pretty">
+                  Practical guidance for picky eaters, healthy growth milestones, school lunchboxes, and balanced household meals.
+                </p>
+              </div>
+              <footer>
+                <a href="#contact" class="inline-flex items-center gap-1.5 font-body text-label-lg text-primary hover:text-secondary">
+                  <span data-design-text-token="label-lg">Book consultation</span>
+                  <span class="material-symbols-outlined text-title-md" aria-hidden="true">arrow_forward</span>
+                </a>
+              </footer>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- How It Works -->
+      <section id="about" class="bg-surface-container py-16 lg:py-24 reveal-on-scroll">
+        <div class="max-w-7xl mx-auto px-6">
+          <div class="max-w-2xl mb-12 flex flex-col gap-3">
+            <h2 data-design-text-token="headline-lg" class="font-headline text-headline-lg-mobile md:text-headline-lg text-primary text-balance">
+              How Your Care Works
+            </h2>
+            <p data-design-text-token="body-md" class="font-body text-body-md text-on-surface-variant text-pretty">
+              A clear, supportive four-step clinical process designed to make lasting nutrition changes feel manageable.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
+            <div class="rounded-xl bg-surface-container-lowest p-6 border border-outline-variant/40 shadow-sm flex flex-col gap-4">
+              <div class="flex items-center justify-between">
+                <!-- COMPONENT: badge-numeric -->
+                <span data-component-id="badge-numeric" data-component-type="badge" data-component-variant="numeric" role="status" class="inline-flex items-center justify-center w-9 h-9 rounded-full bg-primary text-on-primary font-mono tabular-nums">
+                  <span data-design-text-token="label-sm" class="text-label-sm">1</span>
+                </span>
+                <span class="material-symbols-outlined text-headline-md text-sage-green" aria-hidden="true">event_available</span>
+              </div>
+              <h3 data-design-text-token="title-lg" class="font-body text-title-lg text-primary">Book</h3>
+              <p data-design-text-token="body-sm" class="font-body text-body-sm text-on-surface-variant text-pretty">
+                Choose an online video or in-clinic slot and share your primary health goals in a short intake form.
+              </p>
+            </div>
+
+            <div class="rounded-xl bg-surface-container-lowest p-6 border border-outline-variant/40 shadow-sm flex flex-col gap-4">
+              <div class="flex items-center justify-between">
+                <span data-component-id="badge-numeric" data-component-type="badge" data-component-variant="numeric" role="status" class="inline-flex items-center justify-center w-9 h-9 rounded-full bg-primary text-on-primary font-mono tabular-nums">
+                  <span data-design-text-token="label-sm" class="text-label-sm">2</span>
+                </span>
+                <span class="material-symbols-outlined text-headline-md text-sage-green" aria-hidden="true">clinical_notes</span>
+              </div>
+              <h3 data-design-text-token="title-lg" class="font-body text-title-lg text-primary">Assessment</h3>
+              <p data-design-text-token="body-sm" class="font-body text-body-sm text-on-surface-variant text-pretty">
+                We review your recent lab work, medications, eating habits, sleep, and daily schedule in detail.
+              </p>
+            </div>
+
+            <div class="rounded-xl bg-surface-container-lowest p-6 border border-outline-variant/40 shadow-sm flex flex-col gap-4">
+              <div class="flex items-center justify-between">
+                <span data-component-id="badge-numeric" data-component-type="badge" data-component-variant="numeric" role="status" class="inline-flex items-center justify-center w-9 h-9 rounded-full bg-primary text-on-primary font-mono tabular-nums">
+                  <span data-design-text-token="label-sm" class="text-label-sm">3</span>
+                </span>
+                <span class="material-symbols-outlined text-headline-md text-sage-green" aria-hidden="true">restaurant_menu</span>
+              </div>
+              <h3 data-design-text-token="title-lg" class="font-body text-title-lg text-primary">Personalised Plan</h3>
+              <p data-design-text-token="body-sm" class="font-body text-body-sm text-on-surface-variant text-pretty">
+                Receive a realistic, culturally familiar meal guide with portion visuals, swaps, and grocery tips.
+              </p>
+            </div>
+
+            <div class="rounded-xl bg-surface-container-lowest p-6 border border-outline-variant/40 shadow-sm flex flex-col gap-4">
+              <div class="flex items-center justify-between">
+                <span data-component-id="badge-numeric" data-component-type="badge" data-component-variant="numeric" role="status" class="inline-flex items-center justify-center w-9 h-9 rounded-full bg-primary text-on-primary font-mono tabular-nums">
+                  <span data-design-text-token="label-sm" class="text-label-sm">4</span>
+                </span>
+                <span class="material-symbols-outlined text-headline-md text-sage-green" aria-hidden="true">support_agent</span>
+              </div>
+              <h3 data-design-text-token="title-lg" class="font-body text-title-lg text-primary">Follow-up Support</h3>
+              <p data-design-text-token="body-sm" class="font-body text-body-sm text-on-surface-variant text-pretty">
+                Regular check-ins help refine your plan as your lab markers, energy, and routine evolve over time.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials Slider -->
+      <section id="testimonials" class="py-16 lg:py-24 reveal-on-scroll">
+        <div class="max-w-7xl mx-auto px-6">
+          <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
+            <div class="max-w-xl flex flex-col gap-3">
+              <h2 data-design-text-token="headline-lg" class="font-headline text-headline-lg-mobile md:text-headline-lg text-primary text-balance">
+                Stories From Patients
+              </h2>
+              <p data-design-text-token="body-md" class="font-body text-body-md text-on-surface-variant text-pretty">
+                Real experiences from individuals managing chronic conditions and building healthier daily habits.
+              </p>
+            </div>
+
+            <div class="flex items-center gap-3">
+              <!-- COMPONENT: button-icon -->
+              <button id="prev-testimonial" data-component-id="button-icon" data-component-type="button" data-component-variant="icon" type="button" aria-label="Previous testimonial" class="inline-flex items-center justify-center w-11 h-11 rounded-full border border-outline-variant bg-surface-container-lowest hover:bg-surface-container text-primary transition-colors duration-state-change ease-state-change focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">
+                <span class="material-symbols-outlined text-title-lg" aria-hidden="true">arrow_back</span>
+              </button>
+              <button id="next-testimonial" data-component-id="button-icon" data-component-type="button" data-component-variant="icon" type="button" aria-label="Next testimonial" class="inline-flex items-center justify-center w-11 h-11 rounded-full border border-outline-variant bg-surface-container-lowest hover:bg-surface-container text-primary transition-colors duration-state-change ease-state-change focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">
+                <span class="material-symbols-outlined text-title-lg" aria-hidden="true">arrow_forward</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="rounded-xl bg-surface-container-lowest border border-outline-variant/40 shadow-sm p-8 lg:p-10">
+            <div id="testimonial-track" class="flex flex-col gap-6">
+              <div class="flex items-center gap-1 text-soft-coral" aria-label="5 out of 5 stars">
+                <span class="material-symbols-outlined text-title-lg" style="font-variation-settings: &#39;FILL&#39; 1;" aria-hidden="true">star</span>
+                <span class="material-symbols-outlined text-title-lg" style="font-variation-settings: &#39;FILL&#39; 1;" aria-hidden="true">star</span>
+                <span class="material-symbols-outlined text-title-lg" style="font-variation-settings: &#39;FILL&#39; 1;" aria-hidden="true">star</span>
+                <span class="material-symbols-outlined text-title-lg" style="font-variation-settings: &#39;FILL&#39; 1;" aria-hidden="true">star</span>
+                <span class="material-symbols-outlined text-title-lg" style="font-variation-settings: &#39;FILL&#39; 1;" aria-hidden="true">star</span>
+              </div>
+              <blockquote id="testimonial-quote" class="font-headline text-headline-md text-primary max-w-3xl text-pretty">
+                &#34;For the first time, a dietician listened to my family&#39;s cooking habits instead of handing me a rigid list of salads. My HbA1c dropped steadily over four months, and I never felt deprived.&#34;
+              </blockquote>
+              <div class="flex flex-wrap items-center justify-between gap-4 pt-2 border-t border-outline-variant/40">
+                <div>
+                  <p id="testimonial-author" data-design-text-token="title-md" class="font-body text-title-md text-primary">Tariq Mahmood</p>
+                  <p id="testimonial-context" data-design-text-token="body-sm" class="font-body text-body-sm text-on-surface-variant">Type 2 Diabetes Management • Online Consultations</p>
+                </div>
+                <div class="flex items-center gap-2" role="tablist" aria-label="Testimonial slides">
+                  <button type="button" class="testimonial-dot w-3 h-3 rounded-full bg-primary transition-colors" data-index="0" aria-label="Show testimonial 1"></button>
+                  <button type="button" class="testimonial-dot w-3 h-3 rounded-full bg-outline-variant transition-colors" data-index="1" aria-label="Show testimonial 2"></button>
+                  <button type="button" class="testimonial-dot w-3 h-3 rounded-full bg-outline-variant transition-colors" data-index="2" aria-label="Show testimonial 3"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Latest Blog / Nutrition Tips -->
+      <section id="blog" class="bg-surface-container-low py-16 lg:py-24 reveal-on-scroll">
+        <div class="max-w-7xl mx-auto px-6">
+          <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+            <div class="max-w-2xl flex flex-col gap-3">
+              <h2 data-design-text-token="headline-lg" class="font-headline text-headline-lg-mobile md:text-headline-lg text-primary text-balance">
+                Latest Nutrition Tips &amp; Guides
+              </h2>
+              <p data-design-text-token="body-md" class="font-body text-body-md text-on-surface-variant text-pretty">
+                Clear, evidence-based reading to help you separate clinical nutrition facts from everyday diet myths.
+              </p>
+            </div>
+            <a href="#blog" class="inline-flex items-center gap-1.5 font-body text-label-lg text-primary hover:text-secondary shrink-0">
+              <span>View all articles</span>
+              <span class="material-symbols-outlined text-title-md" aria-hidden="true">arrow_forward</span>
+            </a>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+            <!-- Article 1 -->
+            <!-- COMPONENT: card-elevated -->
+            <article data-component-id="card-elevated" data-component-type="card" data-component-variant="elevated" class="h-full rounded-xl bg-surface-container-lowest border border-outline-variant/40 shadow-sm overflow-hidden flex flex-col">
+              <img src="images/salmon-bowl.jpg" alt="Balanced whole-food bowl with grilled salmon, quinoa, avocado, and roasted vegetables" class="w-full h-48 object-cover">
+              <div class="p-6 flex-1 flex flex-col justify-between gap-4">
+                <div class="flex flex-col gap-3">
+                  <div class="flex items-center justify-between gap-2">
+                    <span class="inline-flex items-center rounded-full bg-surface-container text-primary px-3 py-1 font-body text-label-sm">Disease Management</span>
+                    <span class="font-mono text-label-sm text-outline tabular-nums">4 min read</span>
+                  </div>
+                  <h3 data-design-text-token="title-lg" class="font-body text-title-lg text-primary">How to Build a Blood-Sugar Friendly Plate</h3>
+                  <p data-design-text-token="body-sm" class="font-body text-body-sm text-on-surface-variant text-pretty">
+                    Simple fibre-first meal pairing habits that reduce post-meal glucose spikes without cutting out grains.
+                  </p>
+                </div>
+                <a href="#blog" class="inline-flex items-center gap-1 font-body text-label-lg text-primary hover:text-secondary">
+                  <span>Read article</span>
+                  <span class="material-symbols-outlined text-title-md" aria-hidden="true">arrow_forward</span>
+                </a>
+              </div>
+            </article>
+
+            <!-- Article 2 -->
+            <article data-component-id="card-elevated" data-component-type="card" data-component-variant="elevated" class="h-full rounded-xl bg-surface-container-lowest border border-outline-variant/40 shadow-sm overflow-hidden flex flex-col">
+              <img src="images/berries-nuts.jpg" alt="Whole berries, walnuts, pumpkin seeds, and herbal tea on a warm ceramic tray" class="w-full h-48 object-cover">
+              <div class="p-6 flex-1 flex flex-col justify-between gap-4">
+                <div class="flex flex-col gap-3">
+                  <div class="flex items-center justify-between gap-2">
+                    <span class="inline-flex items-center rounded-full bg-surface-container text-primary px-3 py-1 font-body text-label-sm">Myths vs Facts</span>
+                    <span class="font-mono text-label-sm text-outline tabular-nums">5 min read</span>
+                  </div>
+                  <h3 data-design-text-token="title-lg" class="font-body text-title-lg text-primary">PCOS Nutrition: Beyond Cutting Carbs</h3>
+                  <p data-design-text-token="body-sm" class="font-body text-body-sm text-on-surface-variant text-pretty">
+                    Why protein timing, omega-3 fats, and gentle movement matter more than extreme low-carb restriction.
+                  </p>
+                </div>
+                <a href="#blog" class="inline-flex items-center gap-1 font-body text-label-lg text-primary hover:text-secondary">
+                  <span>Read article</span>
+                  <span class="material-symbols-outlined text-title-md" aria-hidden="true">arrow_forward</span>
+                </a>
+              </div>
+            </article>
+
+            <!-- Article 3 -->
+            <article data-component-id="card-elevated" data-component-type="card" data-component-variant="elevated" class="h-full rounded-xl bg-surface-container-lowest border border-outline-variant/40 shadow-sm overflow-hidden flex flex-col">
+              <img src="images/citrus-greens.jpg" alt="Fresh citrus, ginger, leafy greens, and yogurt bowl arranged neatly on a warm cream surface" class="w-full h-48 object-cover">
+              <div class="p-6 flex-1 flex flex-col justify-between gap-4">
+                <div class="flex flex-col gap-3">
+                  <div class="flex items-center justify-between gap-2">
+                    <span class="inline-flex items-center rounded-full bg-surface-container text-primary px-3 py-1 font-body text-label-sm">Healthy Recipes</span>
+                    <span class="font-mono text-label-sm text-outline tabular-nums">3 min read</span>
+                  </div>
+                  <h3 data-design-text-token="title-lg" class="font-body text-title-lg text-primary">5 Gentle Breakfasts for Digestive Comfort</h3>
+                  <p data-design-text-token="body-sm" class="font-body text-body-sm text-on-surface-variant text-pretty">
+                    Easy, fermented and soluble-fibre morning ideas that support gut motility and steady morning focus.
+                  </p>
+                </div>
+                <a href="#blog" class="inline-flex items-center gap-1 font-body text-label-lg text-primary hover:text-secondary">
+                  <span>Read article</span>
+                  <span class="material-symbols-outlined text-title-md" aria-hidden="true">arrow_forward</span>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Final Call-to-Action Banner -->
+      <section id="contact" class="py-16 lg:py-20 reveal-on-scroll">
+        <div class="max-w-7xl mx-auto px-6">
+          <div class="rounded-xl bg-primary text-on-primary p-8 sm:p-12 lg:p-16 flex flex-col lg:flex-row lg:items-center justify-between gap-8 shadow-sm">
+            <div class="max-w-2xl flex flex-col gap-3">
+              <h2 data-design-text-token="headline-lg" class="font-headline text-headline-lg-mobile md:text-headline-lg text-on-primary text-balance">
+                Start your health journey today.
+              </h2>
+              <p data-design-text-token="body-lg" class="font-body text-body-lg text-primary-container text-pretty">
+                Book a 1-on-1 clinical nutrition consultation online or in-clinic and take the guesswork out of eating for your health.
+              </p>
+            </div>
+            <div class="flex flex-wrap items-center gap-4 shrink-0">
+              <a href="#contact" data-component-id="button-cta" data-component-type="button" data-component-variant="primary" class="inline-flex items-center justify-center gap-2 rounded-full bg-soft-coral hover:bg-accent text-on-accent px-7 py-3.5 shadow-sm transition-colors duration-state-change ease-state-change focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-on-primary">
+                <span class="material-symbols-outlined text-title-lg" aria-hidden="true">calendar_month</span>
+                <span data-design-text-token="label-lg" class="font-body text-label-lg">Book a Consultation</span>
+              </a>
+              <a href="https://wa.me/923001234567" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 rounded-full border border-primary-container text-on-primary hover:bg-secondary px-6 py-3.5 transition-colors duration-state-change ease-state-change">
+                <span class="material-symbols-outlined text-title-lg" aria-hidden="true">chat</span>
+                <span data-design-text-token="label-lg" class="font-body text-label-lg">Message on WhatsApp</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-surface-container border-t border-outline-variant/50 pt-14 pb-24">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-10 border-b border-outline-variant/50">
+          <div class="flex flex-col gap-3">
+            <div class="flex items-center gap-2.5">
+              <span class="w-9 h-9 rounded-full bg-primary flex items-center justify-center text-on-primary">
+                <span class="material-symbols-outlined text-title-md" aria-hidden="true">eco</span>
+              </span>
+              <span class="font-headline text-title-lg text-primary">Mehro nisa Malik</span>
+            </div>
+            <p data-design-text-token="body-sm" class="font-body text-body-sm text-on-surface-variant text-pretty">
+              Registered Clinical Dietician offering evidence-based, compassionate nutrition therapy for chronic conditions, hormonal health, and family wellness.
+            </p>
+          </div>
+
+          <div class="flex flex-col gap-3">
+            <h3 data-design-text-token="title-md" class="font-body text-title-md text-primary">Quick Links</h3>
+            <ul class="flex flex-col gap-2 font-body text-body-sm text-on-surface-variant">
+              <li><a href="#home" class="hover:text-primary">Home</a></li>
+              <li><a href="#about" class="hover:text-primary">About</a></li>
+              <li><a href="#services" class="hover:text-primary">Services</a></li>
+              <li><a href="#conditions" class="hover:text-primary">Conditions I Treat</a></li>
+              <li><a href="#blog" class="hover:text-primary">Blog</a></li>
+              <li><a href="#testimonials" class="hover:text-primary">Testimonials</a></li>
+            </ul>
+          </div>
+
+          <div class="flex flex-col gap-3">
+            <h3 data-design-text-token="title-md" class="font-body text-title-md text-primary">Clinic &amp; Contact</h3>
+            <ul class="flex flex-col gap-2.5 font-body text-body-sm text-on-surface-variant">
+              <li class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-title-md text-primary" aria-hidden="true">call</span>
+                <span class="tabular-nums">+92 300 123 4567</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-title-md text-primary" aria-hidden="true">mail</span>
+                <span>clinic@mehronisamalik.com</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-title-md text-primary" aria-hidden="true">schedule</span>
+                <span>Mon–Sat, 10:00 AM – 6:00 PM</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-title-md text-primary" aria-hidden="true">location_on</span>
+                <span>Medical Plaza, Gulberg III, Lahore</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="flex flex-col gap-3">
+            <h3 data-design-text-token="title-md" class="font-body text-title-md text-primary">Connect</h3>
+            <p data-design-text-token="body-sm" class="font-body text-body-sm text-on-surface-variant">
+              Daily nutrition tips and clinic updates.
+            </p>
+            <div class="flex items-center gap-3 pt-1">
+              <a href="#contact" aria-label="Instagram" class="w-10 h-10 rounded-full bg-surface-container-lowest border border-outline-variant/50 flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-colors duration-state-change">
+                <span class="material-symbols-outlined text-title-md" aria-hidden="true">photo_camera</span>
+              </a>
+              <a href="#contact" aria-label="LinkedIn" class="w-10 h-10 rounded-full bg-surface-container-lowest border border-outline-variant/50 flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-colors duration-state-change">
+                <span class="material-symbols-outlined text-title-md" aria-hidden="true">work</span>
+              </a>
+              <a href="#contact" aria-label="YouTube" class="w-10 h-10 rounded-full bg-surface-container-lowest border border-outline-variant/50 flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-colors duration-state-change">
+                <span class="material-symbols-outlined text-title-md" aria-hidden="true">play_circle</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="pt-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 font-body text-body-sm text-on-surface-variant">
+          <p>© 2026 Mehro nisa Malik Clinical Nutrition. All rights reserved.</p>
+          <p class="text-on-surface-variant">Information on this website does not replace personalised medical advice.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Floating WhatsApp Chat Button -->
+    <a href="https://wa.me/923001234567" target="_blank" rel="noopener noreferrer" aria-label="Chat with Mehro nisa Malik on WhatsApp" class="fixed bottom-6 right-6 z-50 inline-flex items-center gap-2 rounded-full bg-primary hover:bg-secondary text-on-primary px-5 py-3.5 shadow-lg transition-colors duration-state-change ease-state-change focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">
+      <span class="material-symbols-outlined text-title-lg" aria-hidden="true">chat</span>
+      <span data-design-text-token="label-lg" class="font-body text-label-lg hidden sm:inline">WhatsApp</span>
+    </a>
+
+  </div>
+
+  <script>
+    (function () {
+      // Mobile menu toggle
+      const menuBtn = document.getElementById('mobile-menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+      if (menuBtn && mobileMenu) {
+        menuBtn.addEventListener('click', function () {
+          const isHidden = mobileMenu.classList.contains('hidden');
+          mobileMenu.classList.toggle('hidden', !isHidden);
+          menuBtn.setAttribute('aria-expanded', String(isHidden));
+        });
+      }
+
+      // Testimonials slider
+      const testimonials = [
+        {
+          quote: '"For the first time, a dietician listened to my family\'s cooking habits instead of handing me a rigid list of salads. My HbA1c dropped steadily over four months, and I never felt deprived."',
+          author: 'Tariq Mahmood',
+          context: 'Type 2 Diabetes Management • Online Consultations'
+        },
+        {
+          quote: '"Mehro nisa helped me understand how to balance my meals for PCOS without cutting out foods I love. My energy levels and cycle regularity improved within three months."',
+          author: 'Ayesha Raza',
+          context: 'PCOS & Hormonal Health • In-Clinic Consultations'
+        },
+        {
+          quote: '"After my kidney diagnosis, I was terrified of eating the wrong things. Her clear portion guide and weekly check-ins gave both me and my family complete peace of mind."',
+          author: 'Sana Khalid',
+          context: 'Renal Nutrition Therapy • Online Consultations'
+        }
+      ];
+
+      let currentIdx = 0;
+      const quoteEl = document.getElementById('testimonial-quote');
+      const authorEl = document.getElementById('testimonial-author');
+      const contextEl = document.getElementById('testimonial-context');
+      const dots = document.querySelectorAll('.testimonial-dot');
+
+      function renderTestimonial(idx) {
+        currentIdx = (idx + testimonials.length) % testimonials.length;
+        const item = testimonials[currentIdx];
+        if (quoteEl) quoteEl.textContent = item.quote;
+        if (authorEl) authorEl.textContent = item.author;
+        if (contextEl) contextEl.textContent = item.context;
+        dots.forEach(function (dot, i) {
+          dot.classList.toggle('bg-primary', i === currentIdx);
+          dot.classList.toggle('bg-outline-variant', i !== currentIdx);
+        });
+      }
+
+      const prevBtn = document.getElementById('prev-testimonial');
+      const nextBtn = document.getElementById('next-testimonial');
+      if (prevBtn) prevBtn.addEventListener('click', function () { renderTestimonial(currentIdx - 1); });
+      if (nextBtn) nextBtn.addEventListener('click', function () { renderTestimonial(currentIdx + 1); });
+      dots.forEach(function (dot) {
+        dot.addEventListener('click', function () {
+          renderTestimonial(Number(dot.getAttribute('data-index') || 0));
+        });
+      });
+
+      // Subtle scroll reveal animation
+      const revealEls = document.querySelectorAll('.reveal-on-scroll');
+      if ('IntersectionObserver' in window) {
+        revealEls.forEach(function (el) {
+          el.classList.add('opacity-0', 'translate-y-4', 'transition-all', 'duration-surface-enter', 'ease-surface-enter');
+        });
+        const observer = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.remove('opacity-0', 'translate-y-4');
+              entry.target.classList.add('opacity-100', 'translate-y-0');
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.1 });
+        revealEls.forEach(function (el) { observer.observe(el); });
+      }
+    })();
+  </script>
+
+
+</body></html>
